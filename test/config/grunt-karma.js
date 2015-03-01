@@ -13,16 +13,29 @@ if (!process.env.SAUCE_USERNAME) {
 
 var customLaunchers = {
   desktop: {
-    sl_chrome: {
+    sl_chrome_windows: {
       base: 'SauceLabs',
       browserName: 'chrome',
       platform: 'Windows 7',
-      version: '35'
+      version: '40'
     },
-    sl_firefox: {
+    sl_firefox_windows: {
       base: 'SauceLabs',
       browserName: 'firefox',
-      version: '30'
+      platform: 'Windows 7',
+      version: '35'
+    },
+    sl_chrome_linux: {
+      base: 'SauceLabs',
+      browserName: 'chrome',
+      platform: 'Linux',
+      version: '40'
+    },
+    sl_firefox_linux: {
+      base: 'SauceLabs',
+      browserName: 'firefox',
+      platform: 'Linux',
+      version: '35'
     }
   },
   android: {
@@ -37,14 +50,14 @@ var customLaunchers = {
     sl_osx_safari: {
       base: 'SauceLabs',
       browserName: 'safari',
-      platform: 'OS X 10.9',
-      version: '7'
+      platform: 'OS X 10.10',
+      version: '8.0'
     },
     sl_ios_safari: {
       base: 'SauceLabs',
       browserName: 'iphone',
-      platform: 'OS X 10.9',
-      version: '7.1'
+      platform: 'OS X 10.10',
+      version: '8.1'
     }
   },
   ie: {
